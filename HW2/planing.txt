@@ -1,0 +1,20 @@
+what i need to do for question 1.
+
+create a list(in a seprate file, maybe a header file.) of numbers that i can use to test a set number of number. or create a function that creates a list of numbers from input to create this list so i can test mutiple times.
+
+try to rember how to write a program so that its not using stated namespace( or is that only for header files?)
+
+i dont have to write a full program do i? i just need to write one function.
+
+Question5
+
+holy fuck polish notation. who the fuck would use this?
+
+ok. first write something that will take input and stick the character in a simple stack.
+then you need to recursivly write a fuctuion that will take the first element of a stack , throw it into another stack. untill you reach then end or rhe mutiplication symbol.
+then you neen to perform the proiper operation and put them back into the stack.
+then you need to recursivly add the at the proper place on the stack
+
+end contition is wehn you are at a number and the next element is the last one/has no number nor math symbol.
+probably best to store the numbers and characters as string, or creat a stack where each element has either a num or character value.
+class constructor. 
