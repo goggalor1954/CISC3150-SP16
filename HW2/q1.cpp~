@@ -1,0 +1,9 @@
+template <typename T>	
+int listZero(std::list<T>& numList){		
+	int zeroCount = 0;
+	for(std::list<T>::iterator i=numList.begin(); i != numList.end(); i++){
+		if(i==0) zeroCOunt++;
+	}
+	return zeroCOunt;
+}		
+	
