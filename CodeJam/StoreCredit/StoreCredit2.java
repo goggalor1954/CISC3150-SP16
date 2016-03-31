@@ -7,7 +7,7 @@ public class StoreCredit{
 		Go.go();
 	}
 	void go(){
-		File inFile = new File("A-large-practice.in");	
+		File inFile = new File("practice.in");	
 		try{
 			//creates a scanner to read each line, the number of cases, an empty stack and reads in the first line.
 			Scanner readIn = new Scanner(inFile);

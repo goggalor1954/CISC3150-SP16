@@ -1,19 +1,9 @@
-//need ot input the text file
-//first line is the number of cases, all foloowing lines pertain to individual cases
-//per case
-//first line is the ammount of credit
-//next line is a series of diffrently priced items
-//iterrate through the items untill you find two that add together to equal the crerdit, there will only be one pair
-//output the first item# and the second item number
-
-
-
 import java.util.*;
 import java.io.*;
 
-public class StoreCredit2{
+public class StoreCredit{
 	public static void main(String[] args){
-		StoreCredit2 Go = new StoreCredit2();
+		StoreCredit Go = new StoreCredit();
 		Go.go();
 	}
 	void go(){
