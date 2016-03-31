@@ -1,0 +1,100 @@
+//inheritance in java
+
+Question1
+
+a) n and r.
+b) m and r.
+c) bObj.demoFunc() invokes the method demoFunc() metthod in BaseCl. dObj.demoFunc() invokes the demoFunc() method in DerivedCl, because althouge it does not change anything from the base class its explicit inclusion does override the base class function.
+
+Question 2
+
+class Queue{
+	//node class definition
+	public class Node<T> {
+		public T nodeValue;
+		public Node<T> next;
+
+		Node(T item){
+			this(item, null);
+		}
+
+		Node(T item, Node<T> next){
+		nodeValue = item;
+		this.next = next;
+		}
+	}
+	//Queue variables
+	protected Node head;
+	protected Node tail;
+	protected int size; 
+	
+	// Queue constructor
+		 Queue(){
+		size = 0;
+	}
+	//Methods
+
+	//empty method
+	public boolean empty(){
+		return size==0;
+	}
+
+	//front method
+	public Node Front(){
+		if(this.empty()==true) return null;
+		else return head;
+	}
+	
+	// push mehtod
+	public void push(T nodeVal ){
+		if(this.empty==true){
+			head = new node(nodeVal);
+			tail = head;
+		}
+		else if(size==1){
+			tail = new node(nodeVal, head);
+		}
+		else{
+			tail= new node( nodeVal, tail);
+		}
+		size++;
+	}
+	
+	//pop method
+	public T pop(){
+		Node iter = tail;
+		if(this.empty==true()) return null;
+		else{
+			for(int i=0; i<size-1; i++){
+				iter = iter.next();
+			}
+			Node popedNode = head;
+			head = iter;
+			size--;
+			head.next==null;
+			return iter.nodeValue;
+		}
+	}
+}
+
+public class DerivedQueue extends Queue{ 
+	void emergency_push(T nodeVal){
+		if(super.empty()==true){
+			super.push(nodeVal);
+		}
+		else{
+			Node temp = head;
+			head = new Node(nodeVal);		
+			temp.next=head;
+			size++;
+		}
+	}
+}
+
+Question 3
+
+r.displayEmployeeInfo() executes the displayEmployeeInfo() function in the HourlyEmployee class. The fuction starts buy calling the displayEmployee() function in the base class (Employee), then prints out the employee's hourly rate status, the employee's hourly pay per hour, and the hours workerd per weeek, an on thier own seprate lines.
+
+q.displayEmployeeInfo() executes the displayEmployeeInfo() function in the SalaryEmployee class. The function starts buy calling the function in the base class (Employee) ,then prints out the employees status as a salleried employee an the employee's salary per week on their own seprate lines.
+
+p.displayEmployeeInfo() executes the displayEmployeeInfo() function in the class Employee. Employee and SallaryEmployee are two diffrent types, so when the earlier statment attempts to copy the values of q to p the only values that were coppied were of the variables the two types shared, emPName and empSnn. p can not execute displayEmplloyeeInfo() from the SalaryEmployee class. The only reason even this was possible is because Employee is the base class of SallaryEmployee. 

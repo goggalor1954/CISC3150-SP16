@@ -1,0 +1,55 @@
+//james roesemann
+
+Q#1 
+(a)
+m and r.
+
+(b)
+m and n.
+
+(c)
+both of them can. 
+/* not sure what the decleration is but ill get back to that */
+
+only the dObj can access the demoFunc() in the derived class. 
+/* allso not sure what the statment is for this one.
+
+Q#2
+baseCl constructor
+baseCl desstructor
+baseCl constructor
+baseCl desstructor
+devivedCl constructor
+devivedCl desstructor
+
+//**double check before publishing**
+
+Q#3
+
+template <typename T>
+class Node {
+public:
+T nodeValue;
+Node<T> *next;
+Node (const T& item, Node<T> *ptr = NULL): nodeValue(item), next(ptr) {}
+};
+
+template <typename T>
+class Queue: public Node{
+	private:
+	Queue *head, *tail;
+	int size;
+
+	public:
+	//default constructor
+	Queue( T newEle): nodeValue(newEle), *head(this), *tail(this), size(1){};
+	
+	void pop(T newEle){
+		Que( T newEle, Queue *head): nodeValue(newEle), *head(*head), *tail(this) 
+
+//dont know what im doing. only way to do this is to try it out.
+
+
+
+
+	
